@@ -1,0 +1,101 @@
+# sciFLT scilab Fuzzy Logic Toolbox
+<REVISION>
+ <revision>@REV@
+
+<DESCRIPTION>
+ <name>Frenagem-Carro
+ <comment>
+ <type>m
+ <SNorm>max
+ <SNormPar>0
+ <TNorm>min
+ <TNormPar>0
+ <Comp>one
+ <CompPar>0
+ <ImpMethod>min
+ <AggMethod>max
+ <defuzzMethod>centroide
+
+<INPUT>
+ <name>Velocidade
+ <range>0 200
+  <mf_name>Baixa
+   <mf_type>trimf
+   <mf_par>-50 0 50
+  <mf_name>Moderadamente Baixa
+   <mf_type>trimf
+   <mf_par>0 50 100
+  <mf_name>Média
+   <mf_type>trimf
+   <mf_par>50 100 150
+  <mf_name>Moderadamente  Alta
+   <mf_type>trimf
+   <mf_par>100 150 200
+  <mf_name>Alta
+   <mf_type>trimf
+   <mf_par>150 200 250
+
+ <name>Distancia
+ <range>0 200
+  <mf_name>Pequena
+   <mf_type>trimf
+   <mf_par>-50 0 50
+  <mf_name>Moderadamente Pequena
+   <mf_type>trimf
+   <mf_par>0 50 100
+  <mf_name>Média
+   <mf_type>trimf
+   <mf_par>50 100 150
+  <mf_name>Moderadamente  Alta
+   <mf_type>trimf
+   <mf_par>100 150 200
+  <mf_name>Alta
+   <mf_type>trimf
+   <mf_par>150 200 250
+
+<OUTPUT>
+ <name>Frenagem
+ <range>0 200
+  <mf_name>Fraco
+   <mf_type>trimf
+   <mf_par>-50 0 50
+  <mf_name>Moderadamente Fraco
+   <mf_type>trimf
+   <mf_par>0 50 100
+  <mf_name>Médio
+   <mf_type>trimf
+   <mf_par>50 100 150
+  <mf_name>Moderadamente Forte
+   <mf_type>trimf
+   <mf_par>100 150 200
+  <mf_name>Forte
+   <mf_type>trimf
+   <mf_par>150 200 250
+
+<RULE>
+5 1 5 1 1.0
+5 2 4 1 1.0
+5 3 3 1 1.0
+5 4 2 1 1.0
+5 5 1 1 1.0
+4 1 4 1 1.0
+4 2 3 1 1.0
+4 3 2 1 1.0
+4 4 1 1 1.0
+4 5 1 1 1.0
+3 1 3 1 1.0
+3 2 2 1 1.0
+3 3 1 1 1.0
+3 4 1 1 1.0
+3 5 1 1 1.0
+2 1 2 1 1.0
+2 2 1 1 1.0
+2 3 1 1 1.0
+2 4 1 1 1.0
+2 5 1 1 1.0
+1 1 1 1 1.0
+1 2 1 1 1.0
+1 3 1 1 1.0
+1 4 1 1 1.0
+1 5 1 1 1.0
+
